@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>利用規約（認証）— 新 高級ジェネ™ | Legal</title>
-  <meta name="description" content="Discord認証システムの利用規約です。認証の条件・禁止事項・ブロック要件について定めています。">
+  <title>利用規約（認証） — 高級ジェネ™ | Legal</title>
+  <meta name="description" content="高級ジェネ™ Discordサーバー認証システムの利用規約です。認証の利用条件・禁止事項を定めています。">
   <link rel="icon" href="https://super-hiko14.com/favicon.ico">
   <link rel="icon" type="image/png" href="https://super-hiko14.com/favicon.png">
   <link rel="stylesheet" href="https://super-hiko14.com/main.css">
@@ -30,6 +30,42 @@
           </a>
         </li>
         <li>
+          <a href="https://about.super-hiko14.com">
+            <span class="site-nav-item-text">
+              <span class="site-nav-item-title">About</span>
+              <span class="site-nav-item-domain">about.super-hiko14.com</span>
+            </span>
+            <span class="site-nav-item-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://kokyujene.super-hiko14.com">
+            <span class="site-nav-item-text">
+              <span class="site-nav-item-title">高級ジェネ™</span>
+              <span class="site-nav-item-domain">kokyujene.super-hiko14.com</span>
+            </span>
+            <span class="site-nav-item-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://tools.super-hiko14.com">
+            <span class="site-nav-item-text">
+              <span class="site-nav-item-title">Tools</span>
+              <span class="site-nav-item-domain">tools.super-hiko14.com</span>
+            </span>
+            <span class="site-nav-item-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://super-hiko14.me/diary/">
+            <span class="site-nav-item-text">
+              <span class="site-nav-item-title">日記</span>
+              <span class="site-nav-item-domain">super-hiko14.me</span>
+            </span>
+            <span class="site-nav-item-arrow">→</span>
+          </a>
+        </li>
+        <li>
           <a href="https://legal.super-hiko14.com">
             <span class="site-nav-item-text">
               <span class="site-nav-item-title">Legal</span>
@@ -47,147 +83,95 @@
     <div class="box">
       <p class="page-eyebrow">legal.super-hiko14.com / auth / terms</p>
       <h1 class="title">Terms<span class="title-dot">.</span></h1>
-      <p class="sub-title">認証システム – 利用規約</p>
+      <p class="sub-title">認証システム 利用規約</p>
       <p class="legal-date">最終更新日：2026年3月12日</p>
-    </div>
-
-    <!-- 1. 目的 -->
-    <div class="box">
-      <h2 class="legal-section-title">1. 目的</h2>
-      <p class="legal-text">
-        1-1. 本規約は、auth.super-hiko14.com で提供される Discord 認証システム(以下「本認証」)の利用規約を定めるものです。<br>
-        1-2. 本認証を利用するすべての方(以下「ユーザー」)は、本規約に同意したものとみなされます。<br>
-        1-3. 本認証は、Discord サーバーへの入室資格を検証するためのシステムであり、年齢・ボット検出・VPN 利用を確認しています。
+      <p class="legal-lead">
+        本規約は、高級ジェネ™ Discordサーバーへの参加認証システム（<a href="https://auth.super-hiko14.com" target="_blank" rel="noopener">auth.super-hiko14.com</a>、以下「本システム」）の利用に関して定めるものです。本システムを利用することで、本規約および<a href="../privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意したものとみなされます。
       </p>
     </div>
 
-    <!-- 2. 認証について -->
+    <!-- 第1条 -->
     <div class="box">
-      <h2 class="legal-section-title">2. 認証の要件</h2>
+      <h2 class="legal-section-title">第1条　サービスの概要</h2>
       <p class="legal-text">
-        2-1. ユーザーが本認証を通じて Discord サーバーへの入室を希望する場合、以下の要件を満たす必要があります。<br><br>
-        <strong>2-1-1. Discord アカウント要件</strong><br>
-        &emsp;・ 有効な Discord アカウント(メールアドレス確認済み)であること<br>
-        &emsp;・ アカウント作成から 14日以上経過していること<br>
-        &emsp;・ Discord 利用規約/コミュニティガイドラインを守っていること<br><br>
-        <strong>2-1-2. ネットワーク要件</strong><br>
-        &emsp;・ VPN/プロキシサービスを使用していないこと<br>
-        &emsp;・ 正常なインターネット接続を有していること<br><br>
-        <strong>2-1-3. ボット検出要件</strong><br>
-        &emsp;・ Cloudflare Turnstile による人間確認(チェックボックス)に応答すること<br>
-        &emsp;・ ボット/自動化ツールでないこと
+        1-1. 本システムは、高級ジェネ™が運営するDiscordサーバーへの参加を希望する方が、Discord OAuth 2.0 を使用してアカウントを連携し、「Member」ロールを取得するための認証サービスです。<br>
+        1-2. 本システムはVercel上で運営されており、Discord・Cloudflare・ProxyCheck・Supabaseなどの外部サービスを利用しています。
       </p>
     </div>
 
-    <!-- 3. 認証フロー -->
+    <!-- 第2条 -->
     <div class="box">
-      <h2 class="legal-section-title">3. 認証フロー</h2>
+      <h2 class="legal-section-title">第2条　利用条件</h2>
       <p class="legal-text">
-        3-1. ユーザーが Discord 認可画面から認証を開始すると、以下のステップが実行されます。<br><br>
-        &emsp;① Discord OAuth 認可(ユーザーが許可ボタンをクリック)<br>
-        &emsp;② Cloudflare Turnstile によるボット検出<br>
-        &emsp;③ VPN/プロキシ検出(ProxyCheck API)<br>
-        &emsp;④ Discord アカウント年齢確認<br>
-        &emsp;⑤ 同一 IP からの複数アカウント検出<br>
-        &emsp;⑥ ロール付与/リダイレクト<br><br>
-        3-2. 上記いずれかで失敗した場合、ユーザーは拒否理由とともにエラー画面へリダイレクトされます。<br>
-        3-3. すべての検証に合格した場合、ユーザーに対して Discord サーバーでのロールが付与されます。
+        本システムを利用するには、以下の条件を満たす必要があります。<br>
+        2-1. Discordアカウントを正規に所持していること<br>
+        2-2. Discordアカウントの作成から14日以上が経過していること<br>
+        2-3. VPN・プロキシ・データセンター回線を使用していないこと<br>
+        2-4. 同一IPアドレスにて他のアカウントが既に認証済みでないこと
+      </p>
+      <p class="legal-note">※ Safariの「プライベートリレー」はVPN扱いとなり認証が拒否される場合があります。その場合はプライベートリレーをオフにしてお試しください。</p>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="box">
+      <h2 class="legal-section-title">第3条　禁止事項</h2>
+      <p class="legal-text">
+        利用者は以下の行為を行ってはなりません。<br>
+        3-1. VPN・プロキシ等のツールを使用して本システムの制限を回避しようとする行為<br>
+        3-2. 複数のDiscordアカウントで認証を行う行為（多重アカウント）<br>
+        3-3. 自動化されたツール（ボット等）を使用して認証を試みる行為<br>
+        3-4. 本システムに対する不正アクセス・攻撃・負荷をかける行為<br>
+        3-5. その他、運営が不適切と判断する行為
       </p>
     </div>
 
-    <!-- 4. 禁止事項 / ブロック要件 -->
+    <!-- 第4条 -->
     <div class="box">
-      <h2 class="legal-section-title">4. 禁止事項 / 認証拒否理由</h2>
+      <h2 class="legal-section-title">第4条　認証の拒否・停止</h2>
       <p class="legal-text">
-        4-1. 以下に該当するユーザーは認証が拒否される場合があります。<br><br>
-        <strong>4-1-1. ボット判定</strong><br>
-        &emsp;・ Turnstile で「非人間」と判定された場合<br>
-        &emsp;・ 複数回の認証失敗が発生した場合<br><br>
-        <strong>4-1-2. VPN/プロキシ使用</strong><br>
-        &emsp;・ VPN サービス(ExpressVPN, NordVPN 等)を使用している場合<br>
-        &emsp;・ プロキシサーバーを経由している場合<br>
-        &emsp;・ 匿名化/リレーサービスを使用している場合<br>
-        <p class="legal-note">※ 正規の ISP により提供される接続方法は除外されることがあります</p><br>
-        <strong>4-1-3. アカウント年齢不足</strong><br>
-        &emsp;・ Discord アカウント作成から 14日未満である場合<br><br>
-        <strong>4-1-4. 複数アカウント検出</strong><br>
-        &emsp;・ 同一 IP から複数の異なる Discord アカウントで認証した場合<br>
-        &emsp;・ 既にブロックされているアカウントと同じ IP を使用している場合<br><br>
-        <strong>4-1-5. その他</strong><br>
-        &emsp;・ 技術的エラー/サーバー側の問題が発生した場合<br>
-        &emsp;・ 運営が不適切と判断する活動が検出された場合
+        以下の場合、認証を拒否または停止することがあります。<br>
+        4-1. 第2条に定める利用条件を満たさない場合<br>
+        4-2. 第3条に定める禁止事項に該当する行為が確認された場合<br>
+        4-3. 本システムまたはDiscordサーバーのルールに著しく違反していると判断された場合
+      </p>
+      <p class="legal-note">認証が拒否・停止された場合においても、理由の詳細な開示義務を運営は負いません。</p>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="box">
+      <h2 class="legal-section-title">第5条　免責事項</h2>
+      <p class="legal-text">
+        5-1. 本システムの運営者は、本システムの利用に関して生じたいかなる損害についても責任を負いません。<br>
+        5-2. Discord・Cloudflare等の外部サービスの障害・仕様変更によって本システムが正常に利用できない場合があります。これによって生じた損害について、運営は一切の責任を負いません。<br>
+        5-3. 本システムによるVPN・プロキシ判定は100%の精度を保証するものではありません。誤判定による認証拒否についてはお問い合わせください。
       </p>
     </div>
 
-    <!-- 5. 複数アカウント -->
+    <!-- 第6条 -->
     <div class="box">
-      <h2 class="legal-section-title">5. 複数アカウント利用について</h2>
+      <h2 class="legal-section-title">第6条　プライバシー</h2>
       <p class="legal-text">
-        5-1. 本認証では、同一 IP からの複数アカウント認証を検出し、後発のアカウントをブロックします。<br>
-        5-2. 複数アカウントの使用は以下の理由から制限されています。<br>
-        &emsp;・ 不正アクセス/乗っ取り検出<br>
-        &emsp;・ 複数規約違反対策<br>
-        &emsp;・ コミュニティの健全性管理<br>
-        5-3. 正当な理由がある場合(家族での利用など)は、お問い合わせフォームより申し立てることができます。
+        本システムにおける個人情報の取り扱いについては、別途定める<a href="../privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー（認証）</a>をご確認ください。
       </p>
     </div>
 
-    <!-- 6. ブロック後の対応 -->
+    <!-- 第7条 -->
     <div class="box">
-      <h2 class="legal-section-title">6. ブロック後の対応</h2>
+      <h2 class="legal-section-title">第7条　規約の変更</h2>
       <p class="legal-text">
-        6-1. 認証に失敗したユーザーは、failure reason を確認してから再度認証に進むことができます。<br>
-        6-2. 技術的な誤りによるブロックまたは異議がある場合は、説明とともにお問い合わせフォームから申し立てることができます。<br>
-        6-3. 申し立てについては、運営が確認した上で判断し、その結果を返答します。返答には時間がかかる場合があります。<br>
-        6-4. VPN/プロキシの使用を中止して再認証することで、多くの場合 ブロックは解除されます。
+        7-1. 運営は必要と判断した場合、いつでも本規約を変更できるものとします。<br>
+        7-2. 変更後の規約は本ページへの掲載をもって効力を生じるものとします。<br>
+        7-3. 重大な変更が生じた場合は、Discordサーバー内でお知らせします。
       </p>
     </div>
 
-    <!-- 7. 免責事項 -->
+    <!-- 第8条 -->
     <div class="box">
-      <h2 class="legal-section-title">7. 免責事項</h2>
+      <h2 class="legal-section-title">第8条　お問い合わせ</h2>
       <p class="legal-text">
-        7-1. 本認証の提供者は、以下については一切の責任を負いません。<br>
-        &emsp;・ 誤った判定(ボット判定エラー、年齢検証エラー等)<br>
-        &emsp;・ 外部サービス(Discord, Cloudflare, ProxyCheck)の不具合<br>
-        &emsp;・ ネットワーク遅延/タイムアウト<br>
-        &emsp;・ 本認証の利用に伴い生じたあらゆる損害<br><br>
-        7-2. VPN/プロキシ検出の精度は 100% ではありません。検出漏れ/誤検出が発生することがあります。<br>
-        7-3. 本認証は誰でも自由に提供/変更/中止できるものとします。<br>
-        7-4. 本認証は Discord/Cloudflare/ProxyCheck とは一切関係がなく、これらの企業は本認証に関して責任を負いません。
-      </p>
-    </div>
-
-    <!-- 8. 規約変更 -->
-    <div class="box">
-      <h2 class="legal-section-title">8. 規約変更</h2>
-      <p class="legal-text">
-        8-1. 本規約は必要に応じて予告なく変更できるものとします。<br>
-        8-2. 変更後の規約は本ページへの掲載をもって効力を生じるものとします。<br>
-        8-3. 変更後も本認証を継続して利用した場合、ユーザーは変更後の規約に同意したものとみなされます。
-      </p>
-    </div>
-
-    <!-- 9. その他 -->
-    <div class="box">
-      <h2 class="legal-section-title">9. その他</h2>
-      <p class="legal-text">
-        9-1. 個人情報の取り扱いについては、別途定める<a href="../privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>をご確認ください。<br>
-        9-2. 本規約と提供されるプライバシーポリシーで矛盾がある場合は、プライバシーポリシーが優先されるものとします。
-      </p>
-    </div>
-
-    <!-- 10. お問い合わせ -->
-    <div class="box">
-      <h2 class="legal-section-title">10. お問い合わせ</h2>
-      <p class="legal-text">
-        10-1. 本規約に関するご質問・ブロック異議申し立ては、以下の方法にてお問い合わせください。<br><br>
+        本規約に関するお問い合わせは以下の方法にてご連絡ください。<br>
         &emsp;/ Googleフォーム：<a href="https://kokyujene.super-hiko14.com/contact" target="_blank" rel="noopener">お問い合わせページ</a><br>
-        &emsp;/ メール：<a href="mailto:kokyujene.contact@gmail.com">kokyujene.contact@gmail.com</a><br><br>
-        10-2. お問い合わせ時には、以下の情報をご記入いただくと対応がスムーズです。<br>
-        &emsp;・ Discord ユーザーネーム<br>
-        &emsp;・ ブロック理由(エラー画面から確認可能)<br>
-        &emsp;・ ( 必要に応じて)詳しい状況説明
+        &emsp;/ メール：<a href="mailto:kokyujene.contact@gmail.com">kokyujene.contact@gmail.com</a>
       </p>
     </div>
 
@@ -195,8 +179,45 @@
     <div class="box">
       <div class="nav-buttons legal-nav-buttons">
         <a href="javascript:history.back()" class="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="M534-342 396-480l138-138v276Z"/></svg><span class="nav-label">1つ前へ</span></a>
-        <a href="../" class="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="M534-342 396-480l138-138v276Z"/></svg><span class="nav-label">一覧へ</span></a>
+        <a href="../../" class="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="M534-342 396-480l138-138v276Z"/></svg><span class="nav-label">一覧へ</span></a>
         <button class="nav-button" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="m342-426 138-138 138 138H342Z"/></svg><span class="nav-label">トップ</span></button>
+      </div>
+      <div class="footer">
+        <div class="footer-top">
+          <nav class="footer-nav" aria-label="フッターナビゲーション">
+            <div class="footer-nav-group">
+              <span class="footer-nav-label">サイト</span>
+              <a href="https://super-hiko14.com">TopPage</a>
+              <a href="https://about.super-hiko14.com">About</a>
+              <a href="https://tools.super-hiko14.com">Tools</a>
+              <a href="https://super-hiko14.me/diary/">日記</a>
+            </div>
+            <div class="footer-nav-group">
+              <span class="footer-nav-label">法的情報</span>
+              <a href="https://legal.super-hiko14.com/terms">利用規約</a>
+              <a href="https://legal.super-hiko14.com/privacypolicy">プライバシーポリシー</a>
+              <a href="https://legal.super-hiko14.com/auth/terms">利用規約（認証）</a>
+              <a href="https://legal.super-hiko14.com/auth/privacypolicy">プライバシーポリシー（認証）</a>
+            </div>
+          </nav>
+          <div class="footer-controls">
+            <button class="theme-toggle" aria-label="テーマ切り替え">
+              <img src="https://super-hiko14.com/sozai/images/moon.webp" alt="ダークモード" class="theme-icon-light">
+              <img src="https://super-hiko14.com/sozai/images/sun.webp" alt="ライトモード" class="theme-icon-dark">
+            </button>
+            <button class="scroll-to-top" aria-label="トップへ戻る">
+              <img src="https://super-hiko14.com/sozai/images/top_light.webp" alt="トップへ" class="scroll-icon-light">
+              <img src="https://super-hiko14.com/sozai/images/top_dark.webp" alt="トップへ" class="scroll-icon-dark">
+            </button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Super Hiko14 All rights reserved.</p>
+        </div>
+        <div class="footer-credit" aria-label="Created by Super Hiko14">
+          <div class="footer-credit-label">Created by</div>
+          <div class="footer-credit-main">Super Hiko14<span class="footer-credit-dot">.</span></div>
+        </div>
       </div>
     </div>
 

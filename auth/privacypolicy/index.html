@@ -86,7 +86,7 @@
       <p class="sub-title">認証システム プライバシーポリシー</p>
       <p class="legal-date">最終更新日：2026年3月12日</p>
       <p class="legal-lead">
-        本プライバシーポリシーは、高級ジェネ™ Discordサーバーへの参加認証システム(<a href="https://auth.super-hiko14.com" target="_blank" rel="noopener">auth.super-hiko14.com</a>、以下「本システム」)における個人情報・データの取り扱いについて定めるものです。本システムを利用することで、本ポリシーに同意したものとみなされます。
+        本プライバシーポリシーは、高級ジェネ™ Discordサーバーへの参加認証システム(<a href="https://auth.super-hiko14.com" target="_blank" rel="noopener">auth.super-hiko14.com</a>、以下「本システム」)における個人情報/データの取り扱いについて定めるものです。本システムを利用することで、本ポリシーに同意したものとみなされます。
       </p>
     </div>
 
@@ -95,9 +95,9 @@
       <h2 class="legal-section-title">1. 収集する情報</h2>
       <p class="legal-text">
         本システムでは、認証プロセスにおいて以下の情報を収集します。<br>
-        &emsp;・ Discord ユーザーID<br>
-        &emsp;・ Discord ユーザー名<br>
-        &emsp;・ アクセス元 IPアドレス
+        &emsp;/ Discord ユーザーID<br>
+        &emsp;/ Discord ユーザー名<br>
+        &emsp;/ アクセス元 IPアドレス
       </p>
       <p class="legal-note">これらの情報はDiscord OAuth 2.0 を通じて取得されます。本システムがアクセスするDiscordのスコープは <code>identify</code>(ユーザー情報の読み取り)および <code>guilds.members.read</code>(サーバーメンバー情報の読み取り)のみです。</p>
     </div>
@@ -107,12 +107,12 @@
       <h2 class="legal-section-title">2. 情報の利用目的</h2>
       <p class="legal-text">
         収集した情報は以下の目的のみに使用します。<br>
-        &emsp;・ Discordサーバーへの「Member」ロール付与<br>
-        &emsp;・ VPN / プロキシ / データセンター回線の検出(不正アクセス防止)<br>
-        &emsp;・ 多重アカウントの検出(同一IPアドレスからの複数認証の防止)<br>
-        &emsp;・ 認証ログの記録(サービスの不正利用防止および障害対応のため)
+        &emsp;/ Discordサーバーへの「Member」ロール付与<br>
+        &emsp;/ VPN / プロキシ / データセンター回線の検出(不正アクセス防止)<br>
+        &emsp;/ 多重アカウントの検出(同一IPアドレスからの複数認証の防止)<br>
+        &emsp;/ 認証ログの記録(サービスの不正利用防止および障害対応のため)
       </p>
-      <p class="legal-note">収集した情報を上記以外の目的で使用することはありません。また、第三者への提供・販売も行いません。ただし、法令に基づく開示要求があった場合はこの限りではありません。</p>
+      <p class="legal-note">収集した情報を上記以外の目的で使用することはありません。また、第三者への提供/販売も行いません。ただし、法令に基づく開示要求があった場合はこの限りではありません。</p>
     </div>
 
     <!-- 3. Cloudflare Turnstile -->
@@ -130,7 +130,7 @@
     <div class="box">
       <h2 class="legal-section-title">4. VPN / プロキシ検出(ProxyCheck)について</h2>
       <p class="legal-text">
-        本システムでは、IPアドレスに基づくVPN・プロキシ検出のために <a href="https://proxycheck.io/" target="_blank" rel="noopener">ProxyCheck.io</a> のAPIを使用しています。Turnstile確認を通過したリクエストのみがProxyCheckへ送信されます。ProxyCheckに送信されるデータはIPアドレスのみです。
+        本システムでは、IPアドレスに基づくVPN/プロキシ検出のために <a href="https://proxycheck.io/" target="_blank" rel="noopener">ProxyCheck.io</a> のAPIを使用しています。Turnstile確認を通過したリクエストのみがProxyCheckへ送信されます。ProxyCheckに送信されるデータはIPアドレスのみです。
       </p>
       <p class="legal-note">
         詳細はProxyCheckのプライバシーポリシーをご確認ください：<a href="https://proxycheck.io/privacy" target="_blank" rel="noopener">proxycheck.io/privacy</a>
@@ -141,18 +141,28 @@
     <div class="box">
       <h2 class="legal-section-title">5. データの保存</h2>
       <p class="legal-text">
-        収集したデータ(Discord ユーザーID・ユーザー名・IPアドレス・認証結果)は <a href="https://supabase.com/" target="_blank" rel="noopener">Supabase Inc.</a> が提供するデータベースに保存されます。データは不正利用の防止・調査のために保持されます。
+        収集したデータ(Discord ユーザーID/ユーザー名/IPアドレス/認証結果)は <a href="https://supabase.com/" target="_blank" rel="noopener">Supabase Inc.</a> が提供するデータベースに保存されます。データは不正利用の防止/調査のために保持されます。
       </p>
       <p class="legal-note">認証中は一時的なセッション情報がブラウザのCookieに保存されます(有効期間5分)。認証完了後は自動的に削除されます。</p>
+    </div>
+
+    <!-- 5.1. IPアドレスの公開/削除について -->
+    <div class="box">
+      <h2 class="legal-section-title">5.1. IPアドレスの公開/削除について</h2>
+      <p class="legal-text">
+        認証結果はDiscordサーバーの管理用チャンネルに通知されますが¹、IPアドレスはDiscordのスポイラー記法(||IP||)で隠蔽されます。さらに、通知後10日が経過したIPアドレスは自動的に削除され、[削除済み]と置換されます。これにより、管理者もIPアドレスを長期間閲覧できない設計です。
+      </p>
+      <p class="legal-note">この仕組みはプライバシー保護と不正対策の両立を目的としています。</p>
+      <p class="legal-note">¹ サーバーオーナー「Super Hiko14」のみ閲覧可能で、悪用しないことを宣言します(まず見る機会ないし)。</p>
     </div>
 
     <!-- 6. データの第三者提供 -->
     <div class="box">
       <h2 class="legal-section-title">6. データの第三者提供</h2>
       <p class="legal-text">
-        収集した情報を目的外の用途や第三者へ販売・提供することは行いません。ただし、以下の場合はこの限りではありません。<br>
-        &emsp;・ 法令に基づく開示要求があった場合<br>
-        &emsp;・ 本システムの運営に必要な範囲でのサービス事業者(Supabase・Cloudflare・ProxyCheck)への提供
+        収集した情報を目的外の用途や第三者へ販売/提供することは行いません。ただし、以下の場合はこの限りではありません。<br>
+        &emsp;/ 法令に基づく開示要求があった場合<br>
+        &emsp;/ 本システムの運営に必要な範囲でのサービス事業者(Supabase/Cloudflare/ProxyCheck)への提供
       </p>
     </div>
 

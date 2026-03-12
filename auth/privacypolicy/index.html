@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー（認証）— 新 高級ジェネ™ | Legal</title>
+  <meta name="description" content="Discord認証システムのプライバシーポリシーです。IP アドレス・Discord 情報の取り扱いについて定めています。">
+  <link rel="icon" href="https://super-hiko14.com/favicon.ico">
+  <link rel="icon" type="image/png" href="https://super-hiko14.com/favicon.png">
+  <link rel="stylesheet" href="https://super-hiko14.com/main.css">
+  <script src="https://super-hiko14.com/main.js"></script>
+</head>
+
+<body>
+  <nav class="site-nav" aria-label="サイトナビゲーション">
+    <button class="site-nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="site-nav-drawer" aria-hidden="true">
+      <ul>
+        <li>
+          <a href="https://super-hiko14.com">
+            <span class="site-nav-item-text">
+              <span class="site-nav-item-title">Profile</span>
+              <span class="site-nav-item-domain">super-hiko14.com</span>
+            </span>
+            <span class="site-nav-item-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://legal.super-hiko14.com">
+            <span class="site-nav-item-text">
+              <span class="site-nav-item-title">Legal</span>
+              <span class="site-nav-item-domain">legal.super-hiko14.com</span>
+            </span>
+            <span class="site-nav-item-arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container legal-page">
+
+    <div class="box">
+      <p class="page-eyebrow">legal.super-hiko14.com / auth / privacypolicy</p>
+      <h1 class="title">Privacy<span class="title-dot">.</span></h1>
+      <p class="sub-title">認証システム – プライバシーポリシー</p>
+      <p class="legal-date">最終更新日：2026年3月12日</p>
+      <p class="legal-lead">
+        本プライバシーポリシーは、auth.super-hiko14.com で提供される Discord 認証システム(以下「本認証」)における情報の取り扱いについて定めるものです。本認証を利用することで、本ポリシーに同意したものとみなされます。
+      </p>
+    </div>
+
+    <!-- 1. 収集する情報 -->
+    <div class="box">
+      <h2 class="legal-section-title">1. 収集する情報</h2>
+      <p class="legal-text">
+        本認証では、以下の情報を収集します。<br><br>
+        <strong>1-1. Discord より取得する情報</strong><br>
+        &emsp;・ Discord ユーザーID<br>
+        &emsp;・ Discord ユーザー名<br>
+        &emsp;・ Discord メールアドレス(プライベート スコープで同意した場合)<br>
+        &emsp;・ Discord アカウント作成日時(年齢検証用)<br><br>
+        <strong>1-2. ネットワーク情報</strong><br>
+        &emsp;・ アクセス元の IP アドレス<br>
+        &emsp;・ リクエストのタイムスタンプ<br><br>
+        <strong>1-3. ボット検出情報</strong><br>
+        &emsp;・ Cloudflare Turnstile の検証結果(ボット判定のみ)<br>
+        &emsp;・ IP アドレスに紐づく VPN/プロキシ検出結果
+      </p>
+      <p class="legal-note">
+        本認証はアカウント機能/ユーザープロフィール機能を有しておらず、メールアドレス等の詳細情報は基本的に収集しません。
+      </p>
+    </div>
+
+    <!-- 2. 情報の利用目的 -->
+    <div class="box">
+      <h2 class="legal-section-title">2. 情報の利用目的</h2>
+      <p class="legal-text">
+        収集した情報は以下の目的のみで使用します。<br><br>
+        &emsp;・ Discord サーバーへの入室認証<br>
+        &emsp;・ ボット/自動化ツール による不正入室の防止<br>
+        &emsp;・ VPN/プロキシを介した接続の拒否<br>
+        &emsp;・ アカウント年齢要件の検証(14日以上)<br>
+        &emsp;・ 同一 IP からの複数アカウント接続の検出<br>
+        &emsp;・ 認証ログの記録と監視<br><br>
+        <p class="legal-note">
+          収集した情報を上記以外の目的で使用することはありません。また、第三者への提供/販売も行いません。ただし、法令に基づく開示要求があった場合はこの限りではありません。
+        </p>
+      </p>
+    </div>
+
+    <!-- 3. 情報の保持期間 -->
+    <div class="box">
+      <h2 class="legal-section-title">3. 情報の保持期間</h2>
+      <p class="legal-text">
+        本認証で収集した情報は以下の期間で保持されます。<br><br>
+        <strong>3-1. IP アドレス/ログ情報</strong><br>
+        &emsp;認証日から 30日間、Supabase データベース上に保持されます。期限を過ぎたデータは自動削除されます。<br><br>
+        <strong>3-2. Turnstile 検証結果</strong><br>
+        &emsp;Cloudflare の処理後、本サーバー側には記録されません(一時的なメモリのみ)。<br><br>
+        <strong>3-3. Cookie 情報</strong><br>
+        &emsp;認証フロー中の セッション Cookie は認証完了後(最大 5分)に自動削除されます。
+      </p>
+    </div>
+
+    <!-- 4. 外部サービスとの連携 -->
+    <div class="box">
+      <h2 class="legal-section-title">4. 外部サービスとの連携</h2>
+      <p class="legal-text">
+        本認証では以下の外部サービスを利用しています。これらの外部サービスに関するデータ処理については、各サービスのプライバシーポリシーが適用されます。<br><br>
+        <strong>4-1. Discord OAuth 2.0</strong><br>
+        &emsp;ユーザー認証のため Discord から情報を取得します。詳細は <a href="https://discord.com/privacy" target="_blank" rel="noopener">Discord プライバシーポリシー</a>をご確認ください。<br><br>
+        <strong>4-2. Cloudflare Turnstile</strong><br>
+        &emsp;ボット検出のため Cloudflare Turnstile を使用しています。IP アドレスは Cloudflare に送信されます。詳細は <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare プライバシーポリシー</a>をご確認ください。<br><br>
+        <strong>4-3. ProxyCheck.co</strong><br>
+        &emsp;VPN/プロキシ検出のため ProxyCheck API を使用しています。IP アドレスは ProxyCheck に送信されます。詳細は <a href="https://proxycheck.co/" target="_blank" rel="noopener">ProxyCheck プライバシーポリシー</a>をご確認ください。<br><br>
+        <strong>4-4. Vercel</strong><br>
+        &emsp;認証エンドポイントは Vercel Functions でホストされています。Vercel の詳細ポリシーについて、詳細は <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel プライバシーポリシー</a>をご確認ください。
+      </p>
+    </div>
+
+    <!-- 5. ユーザーの権利 -->
+    <div class="box">
+      <h2 class="legal-section-title">5. ユーザーの権利</h2>
+      <p class="legal-text">
+        ユーザーは以下の権利を有しています。<br><br>
+        <strong>5-1. アクセス権</strong><br>
+        &emsp;本認証で保有されている自分の情報にアクセスする権利があります。<br><br>
+        <strong>5-2. 削除請求権</strong><br>
+        &emsp;保有している個人情報の削除を請求することができます(ただし、ログ保持期間中のみ)。<br><br>
+        <strong>5-3. 異議申し立て</strong><br>
+        &emsp;VPN/ボット判定による拒否に異議がある場合は、お問い合わせフォームから申し立てることができます。<br><br>
+        これらの請求については、本ページ下部の「お問い合わせ」より連絡してください。
+      </p>
+    </div>
+
+    <!-- 6. セキュリティ -->
+    <div class="box">
+      <h2 class="legal-section-title">6. セキュリティ対策</h2>
+      <p class="legal-text">
+        本認証で取得した情報は以下の方法で保護しています。<br><br>
+        &emsp;・ HTTPS による暗号化通信<br>
+        &emsp;・ HttpOnly Cookie による セッション管理<br>
+        &emsp;・ CSRF 防止(State パラメータ検証)<br>
+        &emsp;・ リプレイアタック防止(セッション Cookie の自動削除)<br>
+        &emsp;・ Supabase による暗号化保存<br><br>
+        ただし、インターネット上の通信は完全に安全であることは保証されません。
+      </p>
+    </div>
+
+    <!-- 7. お問い合わせ -->
+    <div class="box">
+      <h2 class="legal-section-title">7. お問い合わせ</h2>
+      <p class="legal-text">
+        本ポリシーに関するお問い合わせ・データ削除請求・異議申し立ては以下の方法にてご連絡ください。<br><br>
+        &emsp;/ Googleフォーム：<a href="https://kokyujene.super-hiko14.com/contact" target="_blank" rel="noopener">お問い合わせページ</a><br>
+        &emsp;/ メール：<a href="mailto:kokyujene.contact@gmail.com">kokyujene.contact@gmail.com</a><br>
+      </p>
+    </div>
+
+    <!-- 8. ポリシー改変 -->
+    <div class="box">
+      <h2 class="legal-section-title">8. ポリシー変更</h2>
+      <p class="legal-text">
+        本ポリシーは必要に応じて予告なく変更される場合があります。変更後のポリシーは本ページへの掲載をもって効力を生じるものとします。最終更新日を必ずご確認ください。
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="box">
+      <div class="nav-buttons legal-nav-buttons">
+        <a href="javascript:history.back()" class="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="M534-342 396-480l138-138v276Z"/></svg><span class="nav-label">1つ前へ</span></a>
+        <a href="../" class="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="M534-342 396-480l138-138v276Z"/></svg><span class="nav-label">一覧へ</span></a>
+        <button class="nav-button" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="m342-426 138-138 138 138H342Z"/></svg><span class="nav-label">トップ</span></button>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>認証システム — Legal</title>
+  <meta name="description" content="Discord 認証システムの利用規約・プライバシーポリシー。">
+  <link rel="icon" href="https://super-hiko14.com/favicon.ico">
+  <link rel="icon" type="image/png" href="https://super-hiko14.com/favicon.png">
+  <link rel="stylesheet" href="https://super-hiko14.com/main.css">
+  <script src="https://super-hiko14.com/main.js"></script>
+  <style>
+    .legal-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 640px) {
+      .legal-card {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .legal-card-item {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 24px;
+      transition: border-color 0.2s ease, background 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .legal-card-item:hover {
+      border-color: rgba(109, 219, 176, 0.4);
+      background: rgba(109, 219, 176, 0.04);
+    }
+
+    .legal-card-item h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      color: #283f4f;
+    }
+
+    .legal-card-item p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    .legal-card-item .icon {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 1.3em;
+    }
+
+    html[data-theme="dark"] .legal-card-item {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    html[data-theme="dark"] .legal-card-item:hover {
+      border-color: rgba(109, 219, 176, 0.3);
+      background: rgba(109, 219, 176, 0.05);
+    }
+
+    html[data-theme="dark"] .legal-card-item h3 {
+      color: #ddd;
+    }
+
+    html[data-theme="dark"] .legal-card-item p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="site-nav" aria-label="サイトナビゲーション">
+    <button class="site-nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="site-nav-drawer" aria-hidden="true">
+      <ul>
+        <li>
+          <a href="https://super-hiko14.com">
+            <span class="site-nav-item-text">
+              <span class="site-nav-item-title">Profile</span>
+              <span class="site-nav-item-domain">super-hiko14.com</span>
+            </span>
+            <span class="site-nav-item-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://legal.super-hiko14.com">
+            <span class="site-nav-item-text">
+              <span class="site-nav-item-title">Legal</span>
+              <span class="site-nav-item-domain">legal.super-hiko14.com</span>
+            </span>
+            <span class="site-nav-item-arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container legal-page">
+
+    <div class="box">
+      <p class="page-eyebrow">legal.super-hiko14.com / auth</p>
+      <h1 class="title">Auth<span class="title-dot">.</span></h1>
+      <p class="sub-title">Discord 認証システム</p>
+      <p class="legal-lead">
+        Discord サーバー入室時の認証システムに関する規約・ポリシーです。
+      </p>
+    </div>
+
+    <div class="box">
+      <h2 class="legal-section-title">ドキュメント</h2>
+      <div class="legal-card">
+        <a href="./terms/" class="legal-card-item">
+          <h3><span class="icon">📋</span>利用規約</h3>
+          <p>認証の要件・禁止事項・ブロック理由について定めています。</p>
+        </a>
+        <a href="./privacypolicy/" class="legal-card-item">
+          <h3><span class="icon">🔒</span>プライバシーポリシー</h3>
+          <p>IP、Discord 情報などの個人情報の取り扱いについて定めています。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2 class="legal-section-title">よくある質問</h2>
+      <div style="line-height: 2; color: #666;">
+        <p><strong>Q. なぜ認証が必要ですか?</strong></p>
+        <p style="margin-left: 1em; color: #888;">A. ボット・自動ツール・VPN を使用した不正アクセスを防ぐためです。</p>
+
+        <p style="margin-top: 1.5em;"><strong>Q. VPN を使っているとブロックされますか?</strong></p>
+        <p style="margin-left: 1em; color: #888;">A. はい。VPN/プロキシ使用時はブロックされます。正規の接続環境に切り替えてお試しください。</p>
+
+        <p style="margin-top: 1.5em;"><strong>Q. ブロックされました。どうすればいいですか?</strong></p>
+        <p style="margin-left: 1em; color: #888;">A. エラー画面に表示されるブロック理由を確認し、該当する状況を解決してから再度お試しください。<br>ご不明な点は <a href="https://kokyujene.super-hiko14.com/contact" target="_blank" rel="noopener">お問い合わせ</a>ください。</p>
+
+        <p style="margin-top: 1.5em;"><strong>Q. IP アドレスはどのくらい保存されますか?</strong></p>
+        <p style="margin-left: 1em; color: #888;">A. 認証日から 30日間保存されます。期限を過ぎたら自動削除されます。詳細は<a href="./privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>をご確認ください。</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="box">
+      <div class="nav-buttons legal-nav-buttons">
+        <a href="../" class="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="M534-342 396-480l138-138v276Z"/></svg><span class="nav-label">Legal トップへ</span></a>
+        <button class="nav-button" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor" aria-hidden="true"><path d="m342-426 138-138 138 138H342Z"/></svg><span class="nav-label">トップ</span></button>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
